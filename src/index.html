@@ -6,21 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
-  <!--<script src="./scripts/data/initialCards.js" defer></script>-->
-  <!--<script src="./scripts/classes/Card.js" defer></script>-->
-  <!--<script src="./scripts/classes/CardList.js" defer></script>-->
-  <!--<script src="./scripts/classes/Popup.js" defer></script>-->
-  <!--<script src="./scripts/classes/PopupImage.js" defer></script>-->
-  <!--<script src="./scripts/classes/PopupForm.js" defer></script>-->
-  <!--<script src="./scripts/classes/UserInfo.js" defer></script>-->
-  <!--<script src="./scripts/classes/FormValidator.js" defer></script>-->
-  <!--<script src="./scripts/classes/Api.js" defer></script>-->
   <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <!--<img src="./images/logo.svg" alt="mesto logo" class="logo">-->
       <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
@@ -36,7 +26,6 @@
     </div>
     <div class="places-list root__section">
 
-      <!-- Пример вёрстки карточки: -->
       <template id="card-template">
         <div class="place-card">
           <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
@@ -52,12 +41,9 @@
         </div>
       </template>
 
-      <!-- конец примера. -->
-
     </div>
     <div class="popup popup_add-card">
       <div class="popup__content">
-        <!--<img src="./images/close.svg" alt="" class="popup__close popup__close_add-card">-->
         <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_add-card">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form popup__form_add-card" name="new">
