@@ -27,7 +27,7 @@ import UserInfo from "../scripts/classes/UserInfo";
   //экземпляры классов
   //api
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort11',
+    baseUrl: NODE_ENV === 'development' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11',
     headers: {
       authorization: '20e46ea9-04bb-478c-80c8-fe605e519d0c',
       'Content-Type': 'application/json'
