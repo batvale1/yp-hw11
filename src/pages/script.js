@@ -1,3 +1,11 @@
+import "./index.css";
+import Api from "../scripts/classes/Api";
+import Card from "../scripts/classes/Card";
+import CardList from "../scripts/classes/CardList";
+import FormValidator from "../scripts/classes/FormValidator";
+import PopupForm from "../scripts/classes/PopupForm";
+import PopupImage from "../scripts/classes/PopupImage";
+import UserInfo from "../scripts/classes/UserInfo";
 (function () {
   //куда рендерим карточки
   const placesList = document.querySelector('.places-list');
