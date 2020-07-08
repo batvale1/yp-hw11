@@ -35,6 +35,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             esModule: false,
+            name: 'images/[contenthash].[ext]'
           }
         }, {
           loader: 'image-webpack-loader',
