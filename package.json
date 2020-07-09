@@ -10,7 +10,7 @@
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
   "author": "Batov",
-  "license": "",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
