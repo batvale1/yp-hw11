@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
 
   constructor(params) {
     this.name = params.name;

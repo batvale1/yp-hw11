@@ -1,3 +1,11 @@
+import "./index.css";
+import Api from "../scripts/classes/Api";
+import Card from "../scripts/classes/Card";
+import CardList from "../scripts/classes/CardList";
+import FormValidator from "../scripts/classes/FormValidator";
+import PopupForm from "../scripts/classes/PopupForm";
+import PopupImage from "../scripts/classes/PopupImage";
+import UserInfo from "../scripts/classes/UserInfo";
 (function () {
   //куда рендерим карточки
   const placesList = document.querySelector('.places-list');
@@ -19,7 +27,7 @@
   //экземпляры классов
   //api
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort11',
+    baseUrl: NODE_ENV === 'development' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11',
     headers: {
       authorization: '20e46ea9-04bb-478c-80c8-fe605e519d0c',
       'Content-Type': 'application/json'
